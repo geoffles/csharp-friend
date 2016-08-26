@@ -1,4 +1,4 @@
-# Friend Scope Implementation For C#
+# Friend Scope Implementation For C\#
 
 This library allows you to implement a `friend` scope for C# class methods.
 
