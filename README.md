@@ -4,7 +4,7 @@ This library allows you to implement a `friend` scope for C# class methods.
 
 Example:
 
-```
+```csharp
 public class FooContainer
 {
   [Friend(typeof(Foo))]
