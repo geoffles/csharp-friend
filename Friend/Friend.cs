@@ -37,7 +37,7 @@ namespace Friend
         ///     base.Invoke(foo, bar, baz);
         /// }
         /// </example>        
-        protected void Invoke(params object[] args)
+        protected object Invoke(params object[] args)
         {
             var proxyFrame = new StackFrame(1);
             var callerframe = new StackFrame(2);
@@ -71,7 +71,7 @@ namespace Friend
 
             var targetMethod = friendsList.First();
 
-            targetMethod.Invoke(Target, args);
+            return targetMethod.Invoke(Target, args);
         }
     }
 }
